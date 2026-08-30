@@ -14,13 +14,13 @@
       "variant": "high"
     },
     "librarian": {
-      "model": "github-copilot/gemini-3.1-pro-preview"
+      "model": "github-copilot/gemini-3.6-flash"
     },
     "explore": {
       "model": "github-copilot/gpt-5.6-luna"
     },
     "multimodal-looker": {
-      "model": "github-copilot/gpt-5.6-luna"
+      "model": "github-copilot/gemini-3.6-flash"
     },
     "prometheus": {
       "model": "github-copilot/claude-sonnet-5",
@@ -41,7 +41,7 @@
   },
   "categories": {
     "visual-engineering": {
-      "model": "github-copilot/gemini-3.1-pro-preview",
+      "model": "github-copilot/gemini-3.6-flash",
       "variant": "high"
     },
     "ultrabrain": {
@@ -53,22 +53,21 @@
       "variant": "high"
     },
     "artistry": {
-      "model": "github-copilot/gemini-3.1-pro-preview",
+      "model": "github-copilot/gemini-3.6-flash",
       "variant": "high"
     },
     "quick": {
       "model": "github-copilot/gpt-5.6-luna"
     },
     "unspecified-low": {
-      "model": "github-copilot/claude-sonnet-5",
-      "variant": "high"
+      "model": "github-copilot/gpt-5.6-luna"
     },
     "unspecified-high": {
       "model": "github-copilot/claude-sonnet-5",
       "variant": "high"
     },
     "writing": {
-      "model": "github-copilot/gemini-3-flash-preview"
+      "model": "github-copilot/gemini-3.6-flash"
     }
   }
 }
