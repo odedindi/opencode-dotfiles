@@ -3,8 +3,7 @@
   "share": "disabled",
   "autoupdate": "notify",
   "plugin": [
-    "oh-my-openagent@latest",
-    "opencode-copilot-auth@latest"
+    "oh-my-openagent@latest"
   ],
   "permission": {
     "read": {
@@ -25,14 +24,5 @@
       "**/.env.*": "deny",
       "**/.ssh/**": "deny"
     }
-  },
-  "provider": {
-    "ollama": {
-      "npm": "@ai-sdk/openai-compatible",
-      "options": {
-        "baseURL": "https://ollama.com"
-      },
-      "models": {
-      }
-  }}
+  }
 }

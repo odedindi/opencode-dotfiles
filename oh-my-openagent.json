@@ -2,73 +2,68 @@
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "agents": {
     "sisyphus": {
-      "model": "github-copilot/claude-sonnet-5",
-      "variant": "high"
+      "model": "opencode/big-pickle"
     },
     "sisyphus-junior": {
-      "model": "github-copilot/claude-sonnet-5",
-      "variant": "high"
+      "model": "opencode/big-pickle"
     },
     "oracle": {
-      "model": "github-copilot/gpt-5.6-sol",
+      "model": "opencode/nemotron-3-ultra-free",
       "variant": "high"
     },
     "librarian": {
-      "model": "github-copilot/gemini-3.1-pro-preview"
+      "model": "opencode/north-mini-code-free"
     },
     "explore": {
-      "model": "github-copilot/gpt-5.6-luna"
+      "model": "opencode/ling-3.0-tiny-free"
     },
     "multimodal-looker": {
-      "model": "github-copilot/gpt-5.6-luna"
+      "model": "opencode/mimo-v2.5-free"
     },
     "prometheus": {
-      "model": "github-copilot/claude-sonnet-5",
+      "model": "opencode/nemotron-3-ultra-free",
       "variant": "high"
     },
     "metis": {
-      "model": "github-copilot/claude-sonnet-5",
+      "model": "opencode/nemotron-3-ultra-free",
       "variant": "high"
     },
     "momus": {
-      "model": "github-copilot/gpt-5.6-sol",
+      "model": "opencode/nemotron-3-ultra-free",
       "variant": "xhigh"
     },
     "atlas": {
-      "model": "github-copilot/claude-sonnet-5",
-      "variant": "high"
+      "model": "opencode/big-pickle"
     }
   },
   "categories": {
     "visual-engineering": {
-      "model": "github-copilot/gemini-3.1-pro-preview",
+      "model": "opencode/laguna-s-2.1-free",
       "variant": "high"
     },
     "ultrabrain": {
-      "model": "github-copilot/gpt-5.6-sol",
-      "variant": "xhigh"
+      "model": "opencode/nemotron-3-ultra-free",
+      "variant": "high"
     },
     "deep": {
-      "model": "github-copilot/gpt-5.6-terra",
+      "model": "opencode/nemotron-3-ultra-free",
       "variant": "high"
     },
     "artistry": {
-      "model": "github-copilot/gemini-3.1-pro-preview",
+      "model": "opencode/laguna-s-2.1-free",
       "variant": "high"
     },
     "quick": {
-      "model": "github-copilot/gpt-5.6-luna"
+      "model": "opencode/ling-3.0-tiny-free"
     },
     "unspecified-low": {
-      "model": "github-copilot/claude-sonnet-5",
-      "variant": "high"
+      "model": "opencode/ling-3.0-tiny-free"
     },
     "unspecified-high": {
-      "model": "github-copilot/claude-sonnet-5",
-      "variant": "high"
+      "model": "opencode/laguna-s-2.1-free"
     },
     "writing": {
-      "model": "github-copilot/gemini-3-flash-preview"
+      "model": "opencode/laguna-s-2.1-free"
     }
   }
 }
