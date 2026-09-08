@@ -5,6 +5,10 @@
       "model": "github-copilot/claude-sonnet-5",
       "variant": "high"
     },
+    "hephaestus": {
+      "model": "github-copilot/gpt-5.6-sol",
+      "variant": "high"
+    },
     "sisyphus-junior": {
       "model": "github-copilot/claude-sonnet-5",
       "variant": "high"
