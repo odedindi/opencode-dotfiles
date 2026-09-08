@@ -23,6 +23,9 @@ git -C ~/.config/opencode checkout free
 
 Then restart opencode. The `oh-my-openagent.json` and `opencode.json` files are switched wholesale — every agent/category gets a model appropriate to its role from the selected provider.
 
+The `toggle-models.sh` script wraps this interactively (mounted in `~/.zshrc` as `opencode-models`),
+prompting for the target branch and running the checkout for you.
+
 > Note: This is the **global** switch. You can still override per-project by dropping a
 > `.opencode/oh-my-openagent.json` in a specific project (takes precedence over the global one),
 > e.g. to force a single repo to use copilot even when globally on `free`.
@@ -34,11 +37,16 @@ Then restart opencode. The `oh-my-openagent.json` and `opencode.json` files are 
 ├── opencode.json              # Base OpenCode config (plugins, permissions, providers)
 ├── oh-my-openagent.json       # oh-my-opencode agent/category model assignments
 ├── plugins/rtk.ts             # RTK rewrite plugin (token savings)
-├── skills/                    # Personal skill library (42 skills)
+├── toggle-models.sh           # Switch branches (mounted as `opencode-models` alias)
+├── tui.json                   # TUI appearance config
+├── skills/                    # Personal skill library (43 skills)
 │   ├── README.md
 │   └── <skill-name>/SKILL.md
 └── .gitignore                 # Ignores node_modules, caches, backups, secrets
 ```
+
+Plugins: `oh-my-openagent`, `openrtk`, and `@dietrichgebert/ponytail` (ponytail.dev ruleset);
+`main` additionally loads `opencode-copilot-auth`.
 
 **Not tracked** (gitignored): `node_modules/`, `package.json`/`package-lock.json`, `config.json`
 (legacy), `*.bak` backups, `plugins/` cache, and local runtime state. Auth tokens live in
