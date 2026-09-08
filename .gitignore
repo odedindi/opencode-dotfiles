@@ -12,9 +12,9 @@ config.json
 oh-my-opencode.json
 oh-my-openagent.json.bak
 
-# OpenCode runtime state
-data/
-log/
+# OpenCode runtime state (repo root only — do NOT swallow nested data/log dirs)
+/data/
+/log/
 
 # GPU / provider cache
 .gpu/
