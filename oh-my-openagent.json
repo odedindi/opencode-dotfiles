@@ -4,6 +4,10 @@
     "sisyphus": {
       "model": "opencode/big-pickle"
     },
+    "hephaestus": {
+      "model": "opencode/nemotron-3-ultra-free",
+      "variant": "high"
+    },
     "sisyphus-junior": {
       "model": "opencode/big-pickle"
     },

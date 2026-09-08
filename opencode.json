@@ -3,16 +3,14 @@
   "share": "disabled",
   "autoupdate": "notify",
   "plugin": [
-    "oh-my-openagent@latest"
+    "oh-my-openagent@latest",
+    "openrtk",
+    "@dietrichgebert/ponytail"
   ],
   "permission": {
+    "bash": "ask",
+    "edit": "ask",
     "read": {
-      "*": "allow",
-      "**/.env": "deny",
-      "**/.env.*": "deny",
-      "**/.ssh/**": "deny"
-    },
-    "edit": {
       "*": "allow",
       "**/.env": "deny",
       "**/.env.*": "deny",
@@ -24,5 +22,68 @@
       "**/.env.*": "deny",
       "**/.ssh/**": "deny"
     }
+  },
+  "compaction": {
+    "auto": true,
+    "prune": true,
+    "reserved": 10000
+  },
+  "watcher": {
+    "ignore": [
+      "node_modules/**",
+      "dist/**",
+      ".git/**",
+      "build/**",
+      ".next/**",
+      "coverage/**"
+    ]
+  },
+  "mcp": {
+    "github": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-github"],
+      "environment": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "{env:GITHUB_PERSONAL_ACCESS_READ_TOKEN}"
+      }
+    },
+    "sequential-thinking": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    }
+  },
+  "command": {
+    "review": {
+      "description": "Senior code review — correctness, security, perf, edge cases",
+      "template": "Review the following code as a senior engineer. Check for:\n- Correctness and logic errors\n- Security vulnerabilities (OWASP Top 10)\n- Performance issues\n- Backwards compatibility\n- Edge cases and error handling\n- Naming clarity and code design\n\nBe specific and actionable. Reference line numbers where relevant.\n\n$ARGUMENTS"
+    },
+    "commit": {
+      "description": "Generate a conventional commit message for staged changes",
+      "template": "Generate a conventional commit message for the current staged changes.\n\nFollow the Conventional Commits spec:\n  type(scope): short description\n\nAllowed types: feat, fix, chore, refactor, test, docs, style, perf, ci, build\n- Keep the subject line under 72 characters\n- Use imperative mood (\"add\" not \"added\")\n- Add a body if the change is non-trivial, explaining *why* not *what*\n- Note any breaking changes with BREAKING CHANGE: in the footer\n\nOutput only the commit message, no commentary."
+    },
+    "pr": {
+      "description": "Write a PR description from the current git diff",
+      "template": "Write a pull request description based on the current git diff.\n\nStructure:\n## Summary\nWhat changed and why (2-4 sentences, concrete not generic).\n\n## Key Changes\n- Bullet points of notable changes\n\n## Testing\nHow to verify this works.\n\n## Breaking Changes\nList any breaking changes, or write \"None\".\n\n$ARGUMENTS"
+    },
+    "arch": {
+      "description": "Architecture analysis — layers, coupling, improvement suggestions",
+      "template": "Analyze the architecture of this codebase.\n\nIdentify:\n- Layer boundaries and whether they are respected\n- Dependency direction (is it pointing inward?)\n- Coupling hotspots and circular dependencies\n- Violations of clean / layered architecture\n- Concrete, prioritized improvement suggestions\n\nBe specific about file paths and patterns you observe.\n\n$ARGUMENTS"
+    }
+  },
+  "agent": {
+    "build": {},
+    "compaction": {},
+    "explore": {},
+    "general": {
+      "maxSteps": 125
+    },
+    "plan": {
+      "maxSteps": 125
+    },
+    "summary": {},
+    "title": {}
   }
 }
