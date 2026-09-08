@@ -18,13 +18,13 @@
       "variant": "high"
     },
     "librarian": {
-      "model": "github-copilot/gemini-3.6-flash"
+      "model": "github-copilot/gemini-3.8-flash"
     },
     "explore": {
       "model": "github-copilot/gpt-5.6-luna"
     },
     "multimodal-looker": {
-      "model": "github-copilot/gemini-3.6-flash"
+      "model": "github-copilot/gemini-3.8-flash"
     },
     "prometheus": {
       "model": "github-copilot/claude-sonnet-5",
@@ -45,7 +45,7 @@
   },
   "categories": {
     "visual-engineering": {
-      "model": "github-copilot/gemini-3.6-flash",
+      "model": "github-copilot/gemini-3.8-flash",
       "variant": "high"
     },
     "ultrabrain": {
@@ -57,7 +57,7 @@
       "variant": "high"
     },
     "artistry": {
-      "model": "github-copilot/gemini-3.6-flash",
+      "model": "github-copilot/gemini-3.8-flash",
       "variant": "high"
     },
     "quick": {
@@ -71,7 +71,7 @@
       "variant": "high"
     },
     "writing": {
-      "model": "github-copilot/gemini-3.6-flash"
+      "model": "github-copilot/gemini-3.8-flash"
     }
   },
   "git_master": {
