@@ -16,10 +16,10 @@
       "variant": "high"
     },
     "librarian": {
-      "model": "opencode/north-mini-code-free"
+      "model": "opencode/nemotron-3.5-lightning-free"
     },
     "explore": {
-      "model": "opencode/ling-3.0-tiny-free"
+      "model": "opencode/ling-3.0-flash-fin-free"
     },
     "multimodal-looker": {
       "model": "opencode/mimo-v2.5-free"
@@ -42,8 +42,7 @@
   },
   "categories": {
     "visual-engineering": {
-      "model": "opencode/laguna-s-2.1-free",
-      "variant": "high"
+      "model": "opencode/nemotron-3.5-lightning-free"
     },
     "ultrabrain": {
       "model": "opencode/nemotron-3-ultra-free",
@@ -54,20 +53,19 @@
       "variant": "high"
     },
     "artistry": {
-      "model": "opencode/laguna-s-2.1-free",
-      "variant": "high"
+      "model": "opencode/nemotron-3.5-lightning-free"
     },
     "quick": {
-      "model": "opencode/ling-3.0-tiny-free"
+      "model": "opencode/ling-3.0-flash-fin-free"
     },
     "unspecified-low": {
-      "model": "opencode/ling-3.0-tiny-free"
+      "model": "opencode/ling-3.0-flash-fin-free"
     },
     "unspecified-high": {
-      "model": "opencode/laguna-s-2.1-free"
+      "model": "opencode/nemotron-3.5-lightning-free"
     },
     "writing": {
-      "model": "opencode/laguna-s-2.1-free"
+      "model": "opencode/nemotron-3.5-lightning-free"
     }
   },
   "git_master": {
