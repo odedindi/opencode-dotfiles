@@ -9,7 +9,7 @@
       "variant": "high"
     },
     "sisyphus-junior": {
-      "model": "opencode/big-pickle"
+      "model": "opencode/fledge-alpha-free"
     },
     "oracle": {
       "model": "opencode/nemotron-3-ultra-free",
@@ -19,7 +19,7 @@
       "model": "opencode/nemotron-3.5-lightning-free"
     },
     "explore": {
-      "model": "opencode/ling-3.1-flash-free"
+      "model": "opencode/longcat-2.5-preview-free"
     },
     "multimodal-looker": {
       "model": "opencode/mimo-v2.6-flash-free"
