@@ -19,10 +19,10 @@
       "model": "opencode/nemotron-3.5-lightning-free"
     },
     "explore": {
-      "model": "opencode/ling-3.0-flash-fin-free"
+      "model": "opencode/ling-3.1-flash-free"
     },
     "multimodal-looker": {
-      "model": "opencode/mimo-v2.5-free"
+      "model": "opencode/mimo-v2.6-flash-free"
     },
     "prometheus": {
       "model": "opencode/nemotron-3-ultra-free",
@@ -56,10 +56,10 @@
       "model": "opencode/nemotron-3.5-lightning-free"
     },
     "quick": {
-      "model": "opencode/ling-3.0-flash-fin-free"
+      "model": "opencode/ling-3.1-flash-free"
     },
     "unspecified-low": {
-      "model": "opencode/ling-3.0-flash-fin-free"
+      "model": "opencode/ling-3.1-flash-free"
     },
     "unspecified-high": {
       "model": "opencode/nemotron-3.5-lightning-free"
