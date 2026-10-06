@@ -2,70 +2,73 @@
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "agents": {
     "sisyphus": {
-      "model": "opencode/big-pickle"
+      "model": "nvidia/moonshotai/kimi-k3",
+      "variant": "max"
     },
     "hephaestus": {
-      "model": "opencode/nemotron-3-ultra-free",
-      "variant": "high"
+      "model": "nvidia/moonshotai/kimi-k3",
+      "variant": "max"
     },
     "sisyphus-junior": {
-      "model": "opencode/fledge-alpha-free"
+      "model": "nvidia/deepseek-ai/deepseek-v4.1-flash"
     },
     "oracle": {
-      "model": "opencode/nemotron-3-ultra-free",
-      "variant": "high"
+      "model": "nvidia/z-ai/glm-5.3",
+      "variant": "max"
     },
     "librarian": {
-      "model": "opencode/nemotron-3.5-lightning-free"
+      "model": "nvidia/z-ai/glm-5.3"
     },
     "explore": {
-      "model": "opencode/longcat-2.5-preview-free"
+      "model": "nvidia/z-ai/glm-5.3-flash"
     },
     "multimodal-looker": {
-      "model": "opencode/mimo-v2.6-flash-free"
+      "model": "nvidia/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
     },
     "prometheus": {
-      "model": "opencode/nemotron-3-ultra-free",
+      "model": "nvidia/z-ai/glm-5.3",
       "variant": "high"
     },
     "metis": {
-      "model": "opencode/nemotron-3-ultra-free",
+      "model": "nvidia/z-ai/glm-5.3",
       "variant": "high"
     },
     "momus": {
-      "model": "opencode/nemotron-3-ultra-free",
-      "variant": "xhigh"
+      "model": "nvidia/moonshotai/kimi-k3",
+      "variant": "max"
     },
     "atlas": {
-      "model": "opencode/big-pickle"
+      "model": "nvidia/z-ai/glm-5.3",
+      "variant": "high"
     }
   },
   "categories": {
     "visual-engineering": {
-      "model": "opencode/nemotron-3.5-lightning-free"
+      "model": "nvidia/moonshotai/kimi-k3"
     },
     "ultrabrain": {
-      "model": "opencode/nemotron-3-ultra-free",
+      "model": "nvidia/z-ai/glm-5.3",
       "variant": "high"
     },
     "deep": {
-      "model": "opencode/nemotron-3-ultra-free",
+      "model": "nvidia/z-ai/glm-5.3",
       "variant": "high"
     },
     "artistry": {
-      "model": "opencode/nemotron-3.5-lightning-free"
+      "model": "nvidia/nvidia/nemotron-3.5-lightning-30b-a3b"
     },
     "quick": {
-      "model": "opencode/ling-3.1-flash-free"
+      "model": "nvidia/openai/gpt-oss-20b"
     },
     "unspecified-low": {
-      "model": "opencode/ling-3.1-flash-free"
+      "model": "nvidia/openai/gpt-oss-20b"
     },
     "unspecified-high": {
-      "model": "opencode/nemotron-3.5-lightning-free"
+      "model": "nvidia/z-ai/glm-5.3",
+      "variant": "high"
     },
     "writing": {
-      "model": "opencode/nemotron-3.5-lightning-free"
+      "model": "nvidia/nvidia/nemotron-3.5-lightning-30b-a3b"
     }
   },
   "git_master": {
