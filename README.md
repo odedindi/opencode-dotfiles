@@ -8,8 +8,9 @@ This is the **live** config for `~/.config/opencode/` itself (the directory wher
 
 | Branch | Purpose | Models |
 |--------|---------|--------|
-| `main` | **GitHub Copilot** models (paid, high token budget) | `github-copilot/*` (claude-sonnet-5, gpt-5.6-sol, gpt-5.6-terra, ...) |
+| `main` | **GitHub Copilot** models (paid, high token budget) | `github-copilot/*` (claude-sonnet-5.5, claude-opus-5.5, gpt-6.1-sol, gpt-6-luna, ...) |
 | `free` | **Free / open** models (big-pickle, nemotron, ...) — no Copilot budget | `opencode/*-free` |
+| `nvidia` | **NVIDIA NIM** hosted open models — no Copilot budget | `nvidia/*` (kimi-k3, glm-5.3, deepseek-v4.1-flash, nemotron, gpt-oss-20b, ...) |
 
 ### Switching providers
 
@@ -19,12 +20,12 @@ git -C ~/.config/opencode checkout main
 
 # Use free models (big-pickle, nemotron, etc.)
 git -C ~/.config/opencode checkout free
+
+# Use NVIDIA-hosted models (kimi-k3, glm-5.3, nemotron, etc.)
+git -C ~/.config/opencode checkout nvidia
 ```
 
 Then restart opencode. The `oh-my-openagent.json` and `opencode.json` files are switched wholesale — every agent/category gets a model appropriate to its role from the selected provider.
-
-The `toggle-models.sh` script wraps this interactively (mounted in `~/.zshrc` as `opencode-models`),
-prompting for the target branch and running the checkout for you.
 
 > Note: This is the **global** switch. You can still override per-project by dropping a
 > `.opencode/oh-my-openagent.json` in a specific project (takes precedence over the global one),
@@ -37,7 +38,6 @@ prompting for the target branch and running the checkout for you.
 ├── opencode.json              # Base OpenCode config (plugins, permissions, providers)
 ├── oh-my-openagent.json       # oh-my-opencode agent/category model assignments
 ├── plugins/rtk.ts             # RTK rewrite plugin (token savings)
-├── toggle-models.sh           # Switch branches (mounted as `opencode-models` alias)
 ├── tui.json                   # TUI appearance config
 ├── skills/                    # Personal skill library (43 skills)
 │   ├── README.md
@@ -46,7 +46,7 @@ prompting for the target branch and running the checkout for you.
 ```
 
 Plugins: `oh-my-openagent`, `openrtk`, and `@dietrichgebert/ponytail` (ponytail.dev ruleset);
-`main` additionally loads `opencode-copilot-auth`.
+only `main` additionally loads `opencode-copilot-auth` and the `ollama` provider block (`free` and `nvidia` do not).
 
 **Not tracked** (gitignored): `node_modules/`, `package.json`/`package-lock.json`, `config.json`
 (legacy), `*.bak` backups, `plugins/` cache, and local runtime state. Auth tokens live in
